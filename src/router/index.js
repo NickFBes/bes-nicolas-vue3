@@ -14,12 +14,12 @@ const router = createRouter({
         { 
             path: '/collection',
             name: 'collection',
-            component: () => import('../views/CollectionView.vue') 
+            component: CollectionView 
         },
         {
             path: '/card/:id',
-            name: 'BookDetails',
-            component: () => import('../views/DetailBooks.vue')
+            name: 'carddetails',
+            component: CardDetailsView
         }
         
     ] 
